@@ -1,7 +1,8 @@
 # AI Art Generator
 PHP wrapper that uses tuanle618/neural-net-art-generator to generate neural art automatically.
 
-Take a look at [tuanle618/neural-net-art-generator](https://github.com/tuanle618/neural-net-random-art) for information on how tuanle618/neural-net-random-art works.
+Take a look at [tuanle618/neural-net-art-generator](https://github.com/tuanle618/neural-net-random-art)
+for information on how tuanle618/neural-net-random-art works.
 
 # Execution
 
@@ -22,13 +23,15 @@ $imageProcess->execute();
 $imageProcess->execute(3);
 ```
 
-2. Once you've generated your images, call upon the ParseGeneratedImageResultsAction class to extract the absolute paths for each generated image:
+2. Once you've generated your images, call upon the ParseGeneratedImageResultsAction class to extract the absolute paths
+ for each generated image:
 
 ```php
 //Instantiate the class
 $pathProcess = new ParseGeneratedImageResultsAction();
 
-// Using the $imageProcess object from the previous step, pass the output and (Symfony Process) current working directory.
+// Using the $imageProcess object from the previous step, pass the output and (Symfony Process) current working
+directory.
 $pathProcess->execute($imageProcess->getOutput(), $imageProcess->getWorkingDirectory());
 
 //The about method will return an array of paths for each generated image
