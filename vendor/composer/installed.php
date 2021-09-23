@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '51e0535563e9c3063cf2873aef6f4a0262975957',
         'name' => 'ruco/art-generator',
         'dev' => true,
     ),
@@ -157,12 +157,12 @@
             'dev_requirement' => true,
         ),
         'ruco/art-generator' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '51e0535563e9c3063cf2873aef6f4a0262975957',
             'dev_requirement' => false,
         ),
         'sebastian/cli-parser' => array(
@@ -321,6 +321,26 @@
             ),
             'reference' => 'f24ae462b1d60c333df104f0b81ec7d0e12f6e9f',
             'dev_requirement' => true,
+        ),
+        'symfony/polyfill-php80' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/polyfill-php80',
+            'aliases' => array(
+                0 => '1.23.x-dev',
+            ),
+            'reference' => '57b712b08eddb97c762a8caa32c84e037892d2e9',
+            'dev_requirement' => false,
+        ),
+        'symfony/process' => array(
+            'pretty_version' => '5.4.x-dev',
+            'version' => '5.4.9999999.9999999-dev',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/process',
+            'aliases' => array(),
+            'reference' => 'a3ab47968ef2cc5124efc4f1b6b4e7a61b85a543',
+            'dev_requirement' => false,
         ),
         'theseer/tokenizer' => array(
             'pretty_version' => '1.2.1',
