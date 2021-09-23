@@ -14,13 +14,6 @@ class GenerateImagesAction
 
     public function execute(Int $images = 1)
     {
-        //python random_art.py -img_height 512 -img_width 512 -colormode RGB -alpha False -n_images $images
-
-        $test = new Process(['cwd']);
-        $test->run();
-
-        print_r($test->getOutput());
-
         $process = new Process([
             'python3',
             $this->command_path,
@@ -39,5 +32,15 @@ class GenerateImagesAction
         $process->run();
 
         return $process;
+    }
+
+    public function setImgWidth(Int $width)
+    {
+        $this->img_width = $width;
+    }
+
+    public function setImgHeight(Int $height)
+    {
+        $this->img_height = $height;
     }
 }
