@@ -1,0 +1,21 @@
+{
+    "name": "ruco/art-generator",
+    "description": "Laravel service provider that uses tuanle618/neural-net-art-generator to generate neural art automatically.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ruco\\ArtGenerator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Indy Gill",
+            "email": "code@indygill.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    }
+}
