@@ -31,7 +31,7 @@ $imageProcess->execute(3);
 $pathProcess = new ParseGeneratedImageResultsAction();
 
 // Using the $imageProcess object from the previous step, pass the output and (Symfony Process) current working
-directory.
+// directory.
 $pathProcess->execute($imageProcess->getOutput(), $imageProcess->getWorkingDirectory());
 
 //The about method will return an array of paths for each generated image
