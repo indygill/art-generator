@@ -15,7 +15,7 @@ class GenerateImagesAction
     {
         $process = new Process([
             'python3',
-            dirname(__FILE__) . '/../../' . $this->command_path,
+            dirname(dirname(dirname(__FILE__))) . '/' . $this->command_path,
             '-img_height',
             $this->img_height,
             '-img_width',
