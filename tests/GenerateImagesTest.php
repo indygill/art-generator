@@ -31,7 +31,10 @@ final class GenerateImagesTest extends TestCase
 
         $process = $generateImagesAction->execute();
 
-        if(!$process->isSuccessful()) return;
+        if(!$process->isSuccessful())
+        {
+            return $this->fail($process->getErrorOutput());
+        }
 
         $parseGeneratedImageResults = new ParseGeneratedImageResultsAction();
 
