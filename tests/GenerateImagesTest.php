@@ -26,8 +26,8 @@ final class GenerateImagesTest extends TestCase
     {
         $generateImagesAction = new GenerateImagesAction();
 
-        $generateImagesAction->setImgWidth(2000);
-        $generateImagesAction->setImgHeight(2000);
+        $generateImagesAction->setImgWidth(500);
+        $generateImagesAction->setImgHeight(500);
 
         $process = $generateImagesAction->execute();
 
